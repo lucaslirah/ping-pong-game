@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Ping Pong</title>
+</head>
+<script src="index.js" type="module" defer></script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+    body{
+        background-color: #286047;
+    }
+    div{
+        display: flex;
+        gap: 5px;
+
+        border-top: 2px solid white;
+        width: 100%;
+
+        bottom: 0;
+        position: absolute;
+    }
+    button{
+        border: none;
+        border-radius: .2rem;
+        background: #ffffff;
+        padding: 5px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        color: #286047;
+        margin: 0 auto;
+    }
+    .hide{
+        display: none;
+    }
+</style>
+<body>
+    <canvas></canvas>
+    <div>
+        <button class="start">Iniciar</button>
+        <button class="pause hide">Pausar</button>
+        <button class="stop">Parar</button>
+    </div>
+</body>
+</html>
